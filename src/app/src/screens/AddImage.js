@@ -37,7 +37,7 @@ class AddImage extends Component {
       const options = {
         noData: true
       }
-      ImagePicker.launchImageLibrary(options, response => {
+      ImagePicker.launchCamera(options, response => {
         if (response.didCancel) {
           console.log('User cancelled image picker')
         } else if (response.error) {
